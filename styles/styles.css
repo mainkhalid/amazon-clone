@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+:root {
+  --color-primary: #dadada;
+  --color-secondary: #131921;
+  --color-grey: #c4c4c4;
+  --color-white: #fafafa;
+  --color-white2: #e5e5e5;
+  --color-cream1: #ffd64f;
+}
+
+body {
+  background-color: var(--color-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-secondary);
+  padding: 10px 20px;
+  color: var(--color-white);
+}
+nav .nav-country {
+  display: flex;
+  align-items: end;
+  margin-left: 15px;
+  font-size: 1rem;
+  color: var(--color-grey);
+}
+nav .nav-country h1 {
+  color: var(--color-white);
+  font-size: 1rem;
+}
+nav .nav-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  max-width: 1000px;
+  border-radius: 4px;
+  margin-left: 15px;
+}
+nav .nav-search .nav-search-category {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 5px;
+  background-color: var(--color-white2);
+  border-radius: 4px 0 0 4px;
+}
+nav .nav-search .nav-search-input {
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
+}
+nav .nav-search .nav-search-icon {
+  max-width: 41px;
+  padding: 8px;
+  background-color: var(--color-cream1);
+  border-radius: 0 4px 4px 0;
+}
+nav .nav-language {
+  display: flex;
+  align-self: center;
+  gap: 2px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+nav .nav-text {
+  margin-left: 15px;
+}
+nav .nav-text p {
+  font-size: 12px;
+}
+nav .nav-text h1 {
+  font-size: 14px;
+}
+nav .nav-cart {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.nav-bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 20px;
+  background: #232f3e;
+  color: var(--color-white);
+  font-size: 15px;
+}
+.nav-bottom div {
+  display: flex;
+  align-self: center;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.header-slider ul {
+  display: flex;
+  overflow-y: hidden;
+}
+.header-slider a {
+  position: absolute;
+  top: 20%;
+  z-index: 1;
+  padding: 5vh 1vw;
+  background: var(--color-grey);
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header-slider a .control_prev {
+  right: 0;
+}
+.header-slider .header-img {
+  max-width: 100%;
+  -webkit-mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+
+.box-row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin: 20px 30px;
+  justify-content: space-between;
+}
+.box-row .box-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 20px;
+  background: var(--color-white);
+  max-width: 24%;
+  min-height: 200px;
+  z-index: 1;
+}
+.box-row .box-col a {
+  font-size: 13px;
+  color: var(--color-grey);
+  font-weight: 500;
+}
+
+.header-box {
+  margin-top: -22vh;
+}
+
+.product-slider {
+  background: var(--color-white);
+  margin: 0 30px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.product-slider .products {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  margin-top: 10px;
+}
+.product-slider .products img {
+  max-width: 250px;
+  max-height: 120;
+}
+.product-slider .products::-webkit-scrollbar {
+  display: none;
+}
+
+.product-slider-with-price {
+  background: var(--color-white);
+  margin: 0 30px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.product-slider-with-price .products {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin-top: 10px;
+}
+.product-slider-with-price .products .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-width: 210px;
+  background-color: var(--color-white);
+}
+.product-slider-with-price .products .product-card img {
+  width: 110px;
+  margin: 0 50px;
+}
+.product-slider-with-price .products .product-card .product-offer p {
+  background: #be0b3b;
+  color: var(--color-secondary);
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.product-slider-with-price .products .product-card .product-offer span {
+  color: #be0b3b;
+  font-weight: 600;
+  font-size: 12px;
+}
+.product-slider-with-price .products .product-price {
+  color: gray;
+  font-size: 12px;
+}
+.product-slider-with-price .products .product-price h4 {
+  color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: #131921;
+  padding: 20px 60px;
+}/*# sourceMappingURL=styles.css.map */
