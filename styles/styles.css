@@ -111,6 +111,9 @@ nav .nav-cart {
   font-weight: 500;
 }
 
+.header-slider {
+  position: relative;
+}
 .header-slider ul {
   display: flex;
   overflow-y: hidden;
@@ -119,7 +122,7 @@ nav .nav-cart {
   position: absolute;
   top: 20%;
   z-index: 1;
-  padding: 5vh 1vw;
+  padding: 3vh 1vw;
   background: var(--color-grey);
   color: var(--color-secondary);
   text-decoration: none;
@@ -127,7 +130,10 @@ nav .nav-cart {
   font-weight: 600;
   cursor: pointer;
 }
-.header-slider a .control_prev {
+.header-slider .control_prev {
+  left: 0;
+}
+.header-slider .control_next {
   right: 0;
 }
 .header-slider .header-img {
@@ -237,4 +243,10 @@ footer {
   color: #fff;
   background: #131921;
   padding: 20px 60px;
+}
+footer p {
+  font-weight: 600;
+}
+footer p span {
+  color: greenyellow;
 }/*# sourceMappingURL=styles.css.map */

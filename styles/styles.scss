@@ -60,6 +60,7 @@ nav{
             outline: none;
             padding-left: 20px;
             width: 100%;
+
         }
         .nav-search-icon{
             max-width: 41px;
@@ -106,6 +107,7 @@ nav{
     }
 }
 .header-slider{
+    position: relative;
     ul{
         display: flex;
         overflow-y: hidden;
@@ -114,16 +116,19 @@ nav{
         position: absolute;
         top: 20%;
         z-index: 1;
-        padding: 5vh 1vw;
+        padding: 3vh 1vw;
         background: var(--color-grey);
         color: var(--color-secondary);
         text-decoration: none;
         font-size: 18px;
         font-weight: 600;
         cursor: pointer;
-        .control_prev{
-            right: 0;
-        }
+    }
+    .control_prev {
+        left: 0;
+    }
+    .control_next {
+        right: 0;
     }
     .header-img{
         max-width: 100%;

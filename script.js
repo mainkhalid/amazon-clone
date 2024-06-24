@@ -12,32 +12,20 @@ function changeSlide(){
 }
 changeSlide();
 
-prev_btn.addEventListener('click',(n)=>{
-    if(n > 0){
+prev_btn.addEventListener('click', () => {
+    if (n > 0){
         n--;
-    }else{
+    } else {
         n = imgs.length - 1;
     }
     changeSlide();
-})
+});
 
-next_btn.addEventListener('click',(n)=>{
-    if(n = imgs.length - 1){
+next_btn.addEventListener('click', () => {
+    if (n < imgs.length - 1){
         n++;
-    }else{
+    } else {
         n = 0;
     }
     changeSlide();
-})
-
-//product horizontal mouse whell scroll;
-
-// const scrollcontainer = document.querySelectorAll('.products');
-// for (const item of scrollcontainer) {
-//     item.addEventListener('wheel', (evt)=>{
-//         evt.preventDefault();
-//         item.scrollLeft =+ evt.deltaY;
-
-//     })
-    
-// }
+});
