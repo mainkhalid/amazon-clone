@@ -249,4 +249,71 @@ footer p {
 }
 footer p span {
   color: greenyellow;
+}
+
+.form-container {
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: auto;
+  transform: translate(-50%, -50%);
+}
+.form-container .container {
+  border: 1px solid var(--color-grey);
+  border-radius: 8px;
+  height: 70vh;
+  width: 350px;
+  margin: 1rem;
+}
+.form-container .container h3 {
+  margin: 0 8rem;
+}
+.form-container .container .content {
+  margin: 1rem;
+}
+.form-container .container .content span {
+  color: blue;
+}
+.form-container .container .content span:hover {
+  color: var(--color-cream1);
+  text-decoration: underline;
+}
+.form-container .container .content .inputs {
+  margin: 1rem 0;
+}
+.form-container .container .content .inputs label {
+  font-weight: 500;
+}
+.form-container .container .content .inputs input {
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 300px;
+  background: none;
+  border: 1px solid var(--color-grey);
+}
+.form-container .container .content .inputs button {
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--color-cream1);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 8px;
+  border: none;
+}
+.form-container .container .content .help {
+  margin: 1.5rem 0;
+}
+.form-container button {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px;
+  border: none;
+  color: inherit;
 }/*# sourceMappingURL=styles.css.map */
